@@ -1,5 +1,23 @@
 import React from 'react'
 
+
+function YouTubeVideo({ videoId }) {
+  return (
+    <div>
+      <iframe
+        width="800"
+        height="450"
+        src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+  );
+}
+
+
 function Navbar() {
     const navItems= (
       <>
@@ -33,7 +51,7 @@ function Navbar() {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">{navItems} </ul>
     </div>
-    <a className="text-2xl font-bold cursor-pointer">BookStore</a>
+    <a className="text-2xl font-bold cursor-pointer">VIKAS STUDY ROOM</a>
   </div>
   <div className="navbar-end">
   <div className="navbar-center hidden lg:flex">
@@ -60,8 +78,105 @@ function Navbar() {
 </div>
 </div>
 </div>
+
+<div className="collapse collapse-plus bg-base-200">
+  <input type="radio" name="my-accordion-3" defaultChecked />
+  <div className="collapse-title text-xl font-medium">PRIJECTS</div>
+  <div className="carousel carousel-end rounded-box">
+<div className="carousel-item">
+      <YouTubeVideo videoId="7l5UgtWfnw0" /> 
+    </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="DBMPXJJfQEA" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="W3sOezpkGWI" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="F5EYXc91Cpo" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="k-rokZ6qmzg" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="9OGhwqWQ8fI" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="DBMPXJJfQEA" /> 
+  </div>
+</div>
+</div>
+<div className="collapse collapse-plus bg-base-200">
+  <input type="radio" name="my-accordion-3" />
+  <div className="collapse-title text-xl font-medium">MERN STACK BLOGGING PROJECTS</div>
+  <div className="carousel carousel-end rounded-box">
+<div className="carousel-item">
+      <YouTubeVideo videoId="WsoT4sHX7oU" /> 
+    </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="MZyz139mamw" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="veA5tIwU1XI" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="5jnMFO8Im00" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="Ql__w3_rMW0" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="VYq0E3a2H5A" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="Qq1wIn7_QA8" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="TyDomOpaP4I" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="5268ugI9DLA" /> 
+  </div>
+</div>
+</div>
+<div className="collapse collapse-plus bg-base-200">
+  <input type="radio" name="my-accordion-3" />
+  <div className="collapse-title text-xl font-medium">Click to open this one and close others</div>
+  <div className="carousel carousel-end rounded-box">
+  <div className="carousel-item">
+      <YouTubeVideo videoId="y8FwPnK4LxY" /> 
+    </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="QmX6fXjp78Y" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="B9plcgbcNFk" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="xQVtBPT3i_g" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="apJYbb_ZJjg" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="dJqDLvLOzbg" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="-hZX61AU1Mw" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="1DO3BOeCnRU" /> 
+  </div>
+  <div className="carousel-item">
+      <YouTubeVideo videoId="uvhL-Axgz2M" /> 
+  </div>
+  </div>
+</div>
+
     </>
+    
   )
 }
+
 
 export default Navbar
